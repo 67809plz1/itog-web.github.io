@@ -1,0 +1,166 @@
+/* Стили для footer */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo i {
+    color: var(--primary);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+.footer-links li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.footer-links i {
+    width: 16px;
+    color: var(--primary);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 3rem; /* Увеличиваем отступ между столбцами */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px; /* Увеличиваем минимальную ширину */
+    margin-bottom: 1.5rem;
+}
+
+/* Первый столбец - лого и описание - шире */
+.footer-column:first-child {
+    flex: 1.5; /* Делаем первый столбец немного шире */
+    min-width: 300px;
+    max-width: 400px; /* Ограничиваем максимальную ширину */
+}
+
+.footer-column h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px; /* Небольшая анимация при наведении */
+}
+
+.footer-column p {
+    color: #adb5bd;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #495057;
+    color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .footer-content {
+        gap: 2rem;
+    }
+    
+    .footer-column {
+        min-width: 200px;
+    }
+    
+    .footer-column:first-child {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .footer-column:first-child {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-content {
+        gap: 2rem;
+    }
+    
+    .social-links {
+        gap: 0.8rem;
+    }
+    
+    .social-links a {
+        width: 36px;
+        height: 36px;
+    }
+}
