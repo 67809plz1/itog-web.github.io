@@ -1,5 +1,5 @@
 // particles.js - новый файл
-function createParticles() {
+/* function createParticles() {
     const particlesContainer = document.querySelector('.particles');
     const particleCount = 12;
     
@@ -29,4 +29,4 @@ function createParticles() {
 }
 
 // Запуск после загрузки DOM
-document.addEventListener('DOMContentLoaded', createParticles);
+document.addEventListener('DOMContentLoaded', createParticles); */

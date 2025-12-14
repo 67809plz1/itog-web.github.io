@@ -8,7 +8,7 @@ body {
         radial-gradient(circle at 100% 0%, rgba(124, 58, 237, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 100% 100%, rgba(236, 72, 153, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 0% 100%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
-        linear-gradient(135deg, #242fca 0%, #0c0641 100%);
+        linear-gradient(135deg, #5b3aed 0%);
     background-attachment: fixed;
     min-height: 100vh;
 }
